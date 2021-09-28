@@ -1,0 +1,103 @@
+/* Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #646acd;
+  font-family: 'Segoe UI';
+}
+
+section {
+  padding: 50px 15px;
+  border-radius: 6px;
+  height: 100vh;
+}
+
+section:nth-child(even) {
+  background-color: #3f51b5;
+}
+
+.section-title {
+  font-size: 48px;
+  text-align: center;
+  color: #DDD;
+}
+
+.unstyled-list {
+  list-style: none;
+}
+
+/* Navigation Bar Rules */
+nav {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav h1 {
+  color: #DDD;
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 15px;
+  background-color: #3f51b5;
+  border-radius: 6px;
+  font-size: 24px;
+  user-select: none;
+}
+
+nav ul li a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* Global Calculator Rules */
+.calculator {
+  background-color: #2e40a8;
+  color: #DDD;
+  width: 400px;
+  border-radius: 6px;
+  margin: 20px auto;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 80px);
+  gap: 15px;
+}
+
+.calculator .screen {
+  grid-column: 1 / 5;
+  outline: none;
+  background-color: #EEE;
+}
+
+.calculator button {
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.calculator .operator {
+  background-color: #EFFF93;
+}
+
+.calculator .del {
+  background-color: #FE9FA9;
+}
