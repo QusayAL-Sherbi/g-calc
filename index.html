@@ -4,54 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator In Multi Ways</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav-cont">
-        <h1>Where Are You Going?</h1>
-        <ul class="unstyled-list">
-          <li><a href="#grid-calc">Grid Calculator</a></li>
-          <li><a href="#flex-calc">Flex Calculator</a></li>
-          <li><a href="#float-calc">Float Calculator</a></li>
-        </ul>
-      </div>
-    </nav>
 
     <!-- Grid Calculator -->
     <section id="grid-calc" class="calc grid-calc">
-      <h2 class="section-title">Grid Calculator</h2>
+      <h2 class="section-title">Calculator</h2>
       <div class="calculator">
-        <input type="text" class="screen" readonly>
-        <button class="num">1</button>
-        <button class="num">2</button>
-        <button class="num">3</button>
-        <button class="operator">+</button>
-        <button class="num">4</button>
-        <button class="num">5</button>
-        <button class="num">6</button>
-        <button class="operator">-</button>
-        <button class="num">7</button>
-        <button class="num">8</button>
-        <button class="num">9</button>
-        <button class="operator">*</button>
-        <button class="del">C</button>
-        <button class="num">0</button>
-        <button class="operator">=</button>
-        <button class="operator">/</button>
+        <span class="current-val">00</span>
+        <div class="grid-container">
+          <input type="text" class="screen" value="" readonly />
+          <button class="num" data-number="1">1</button>
+          <button class="num" data-number="2">2</button>
+          <button class="num" data-number="3">3</button>
+          <button class="operator" data-operater="+">+</button>
+          <button class="num" data-number="4">4</button>
+          <button class="num" data-number="5">5</button>
+          <button class="num" data-number="6">6</button>
+          <button class="operator" data-operater="-">-</button>
+          <button class="num" data-number="7">7</button>
+          <button class="num" data-number="8">8</button>
+          <button class="num" data-number="9">9</button>
+          <button class="operator" data-operater="*">X</button>
+          <button class="del">C</button>
+          <button class="num" data-number="0">0</button>
+          <button class="operator" data-operater="=">=</button>
+          <button class="operator" data-operater="/">/</button>
+        </div>
       </div>
     </section>
 
-    <!-- Flex Calculator -->
-    <section id="flex-calc" class="calc flex-calc">
-      <h2 class="section-title">Flex Calculator</h2>
-    </section>
-
-    <!-- Float Calculator -->
-    <section id="float-calc" class="calc float-calc">
-      <h2 class="section-title">Float Calculator</h2>
-    </section>
-
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #646acd;
+  background-color: #242424;
   font-family: 'Segoe UI';
 }
 
@@ -68,22 +68,29 @@ nav ul li a {
 
 /* Global Calculator Rules */
 .calculator {
-  background-color: #2e40a8;
+  background-color: #000;
   color: #DDD;
   width: 400px;
-  border-radius: 6px;
+  border-radius: 12px;
   margin: 20px auto;
-  padding: 15px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 80px);
-  gap: 15px;
+  padding: 30px 20px;
 }
 
+/* .current-val {
+  display: none;
+} */
+
 .calculator .screen {
-  grid-column: 1 / 5;
   outline: none;
-  background-color: #EEE;
+  background-color: #000;
+  color: #FFF;
+  font-size: 40px;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 12px;
+  margin-top: 10px;
+  border: none;
 }
 
 .calculator button {
@@ -92,12 +99,43 @@ nav ul li a {
   border: none;
   cursor: pointer;
   font-weight: bold;
+  border-radius: 50%;
+}
+
+.calculator .num {
+  background-color: #333333;
+  color: #FFF;
 }
 
 .calculator .operator {
-  background-color: #EFFF93;
+  background-color: #FF9500;
+  color: #FFF;
 }
 
 .calculator .del {
-  background-color: #FE9FA9;
+  background-color: #ff001b;
+  color: #FFF;
+}
+
+/* Grid Calculator Rules */
+.grid-calc .calculator .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 80px);
+  gap: 15px;
+}
+
+.grid-calc .calculator .screen {
+  grid-column: 1 / 5;
+}
+
+/* Flex Calculator Rules */
+.flex-calc .calculator {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.flex-calc .calculator .screen {
+  display: block;
+  width: 100%;
 }
